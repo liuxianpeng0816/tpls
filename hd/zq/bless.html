@@ -1,0 +1,728 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{%$title%}</title>
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script type="text/javascript" src="zq/bless/js/zepto.min.js"></script>
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="zq/bless/css/bless.css">
+<script src='zq/bless/js/swipe.js'></script>
+<script src='zq/bless/js/msk.js'></script>
+<style type="text/css">
+.sc-yq {
+    padding: 10px;
+}
+
+.sc-yq img {
+    display: block;
+}
+
+.sc-yq .hd {
+    height: 140px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.sc-yq .hd .logo-img {
+
+    height: 165px;
+    background-image: url(zq/bless/images/top_logo.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: -47px;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: 72px 82px;
+}
+
+.sc-yq .upper {
+    height: 440px;
+    border-radius: 6px 6px 0 0;
+    background-color: #003259;
+    padding-left: 16px;;
+    padding-bottom: 12px;
+    margin-top: -90px;
+    padding-right: 16px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sc-yq .upper .title {
+    margin: 0, auto;
+}
+
+.sc-yq .upper .title .share-type {
+    font-size: 14px;
+    color: #ffffff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    float: left;
+    margin: 0, auto;
+}
+
+.sc-yq .upper .title .share-time {
+    font-size: 12px;
+    color: #ffffff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    float: right;
+}
+
+.sc-yq .upper .bd {
+    color: #FFF;
+    width: 100%;
+    height: 200px;
+    /*	position: relative;
+        display: table;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image:url(./images/bg5.jpg);*/
+
+}
+
+.sc-yq .upper .tip1 {
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 120px;
+
+}
+
+.sc-yq .upper .tip2 {
+    color: #ffffff;
+    filter:alpha(opacity=0);
+    font-size: 15px;
+    top: 20px;
+    margin-bottom: 28px;
+    position: relative;
+    margin-top: 10px;
+
+}
+
+.sc-yq .upper .input {
+    margin-top: -180px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.sc-yq .upper .input .way {
+    padding-left: 50px;
+}
+
+.sc-yq .upper .input .way .send_reply {
+
+    height: 40px;
+    width: 18%;
+    background-color: #ed174d;
+    border: 0px;
+    position: absolute;
+    right: 16px;;
+    margin-top: 0px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+
+}
+
+.sc-yq .upper .input .way .send_reply:hover {
+    background-color: #8a0000;
+}
+
+.sc-yq .upper .input .select_way .choice {
+
+    height: 38px;
+    width: 78%;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 0px;
+    margin-top: 15px;
+    margin-left: 3px;
+    border: solid 1px #ffffff;
+    display: block;
+
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.sc-yq .upper .input .select_way .choice:hover {
+
+    border:0px;
+    /*filter:alpha(opacity:50);
+    -moz-opacity:0.5;
+    opacity:0.5;*/
+    background:rgba(255,255,255,0.5) none repeat scroll !important; /*实现FF背景透明，文字不透明*/
+
+}
+
+.sc-yq .upper .gg {
+
+    height: 22px;
+    width: 200px;
+    border-radius: 6px;
+    border: 0px;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.sc-yq .upper .input .select_way .prev {
+    background-image: url(zq/bless/images/prev1.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    height: 45px;
+    width: 45px;
+    background-size: 70%;
+    position: absolute;
+    left: 20px;;
+    margin-top: -155px;
+    display: block;
+
+}
+
+.sc-yq .upper .input .select_way .prev:hover {
+    background-image: url(zq/bless/images/prev2.png);
+    display: block;
+
+}
+
+.sc-yq .upper .input .select_way .next {
+    background-image: url(zq/bless/images/next1.png);
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 45px;
+    background-size: 70%;
+    position: absolute;
+    right: 8px;;
+    margin-top: -155px;
+    display: block;
+}
+
+.sc-yq .upper .input .select_way .next:hover {
+    background-image: url(zq/bless/images/next2.png);
+    display: block;
+
+}
+
+.sc-yq .upper .input .button-collect {
+    margin-bottom: auto;
+}
+
+.sc-yq .upper .collect {
+
+    height: 38px;
+    width: 92%;
+    border-radius: 6px;
+    background-color: #ed174d;
+    border: 0px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    margin: auto;
+    display: block;
+
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.sc-yq .upper .collect:hover {
+
+    background-color: #8a0000;
+    border: 0px;
+}
+
+.sc-yq .upper .bd .txt {
+    color: #ffffff;
+    font-size: 30px;
+    padding-bottom: 10px;
+
+}
+
+.sc-yq .upper .bd .txt .p1 {
+    word-break: break-all;
+}
+
+.sc-yq .upper .bd .bar {
+    position: absolute;
+    bottom: 0;
+    height: 37px;
+    line-height: 37px;
+    width: 100%;
+    font-size: 14px;
+    left: 0;
+}
+
+.sc-yq .upper .bd .bar i, .sc-yq .comment .c-bd dl .zan i {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    /*background-image: url({%$iconimg%});*/
+    background-image: url(zq/bless/images/icon_yq2.png);
+    background-size: 22px auto;
+    vertical-align: -40px;
+    margin-right: 6px;
+}
+
+.sc-yq .upper .bd .bar .more i {
+    background-position: 0 -54px;
+}
+
+.sc-yq .upper .bd .bar .cNum i {
+    background-position: 0 -86px;
+}
+
+.sc-yq .upper .bd .bar .zNum i {
+    background-position: 0 -27px;
+}
+
+.sc-yq .android_download .download_link {
+    /*background-image:url(zq/bless/images/download.png);*/
+    background-repeat: no-repeat;
+    height: 120px;
+    margin: 0 auto;
+    background-position: center;
+    position: relative;
+    margin-top: -60px;
+    margin-bottom: -50px;
+    background-size: 146px 63px;
+}
+
+.sc-yq .lower {
+    border-radius: 0 0 6px 6px;
+    padding-left: 16px;;
+    padding-bottom: 12px;;
+    padding-right: 16px;;
+    background-color: #efefef;
+    z-index: -1;
+}
+
+.sc-yq .lower .text1 {
+    font-size: 14px;
+    color: #7f7f7f;
+    line-height: 26px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.sc-yq .lower .text2 {
+    font-size: 14px;
+    color: #b3b3b3;
+    line-height: 20px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.sc-yq .comment {
+}
+
+.sc-yq .comment .c-hd {
+    height: 30px;
+    line-height: 30px;
+    color: #000000;
+    padding-left: 12px;
+    border-top: 1px solid #dfe2e6;
+    border-bottom: 1px solid #dfe2e6;
+    font-size: 14px;
+}
+
+.sc-yq .comment .c-bd {
+    padding: 15px 15px 15px 15px;
+}
+
+.sc-yq .comment .c-bd .list {
+    margin-bottom: 30px;
+}
+
+.sc-yq .comment .c-bd .list .img {
+    float: left;
+    display: inline-block;
+    width: 40px;
+}
+
+.sc-yq .comment .c-bd .right {
+    padding-left: 50px;
+    position: relative;
+}
+
+.sc-yq .comment .c-bd .list .content {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.sc-yq .comment .c-bd .list .floor {
+    font-size: 14px;
+    color: #adb0b3;
+}
+
+.sc-yq .comment .c-bd dl .date {
+    top: 12px;
+    right: 22px;
+    font-size: 16px;
+    color: #adb0b3;
+}
+
+.sc-yq .comment .c-bd .list .zan {
+    bottom: 0px;
+    right: 22px;
+    position: absolute;
+}
+
+.sc-yq .comment .c-bd .list .zan i {
+    background-position: 0 -108px;
+}
+
+.txt {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.sc-yq .comment .c-bd dl {
+    position: relative;
+    height: 70px;
+    width: 100%;
+}
+
+.sc-yq .comment .c-bd dl dt, .sc-yq .comment .c-bd dl dd {
+    position: absolute;
+}
+
+.sc-yq .comment .c-bd dl .img {
+    top: 15px;
+    left: 15px;
+}
+
+.sc-yq .comment .c-bd dl .content {
+    top: 15px;
+    left: 63px;
+    font-size: 16px;
+}
+
+.sc-yq .comment .c-bd dl .floor {
+    top: 42px;
+    left: 63px;
+    font-size: 12px;
+    color: #adb0b3;
+}
+
+.sc-yq .comment .c-bd dl .date {
+    top: 15px;
+    right: 22px;
+    font-size: 12px;
+    color: #adb0b3;
+}
+
+.sc-yq .feature .row-fluid {
+    height: 134px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.sc-yq .feature .row-fluid .col-xs-4 .text {
+    line-height: 40px;
+    color: #9AC0CD;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sc-yq .feature .row-fluid .col-xs-4 .img-responsive {
+    width: 67px;
+    height: 54px;
+    margin: 0 auto;
+}
+
+.content .float_down {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    background-image: url(zq/bless/images/float_down.png);
+    background-repeat: no-repeat;
+    bottom: -77px;
+    left: -10px;
+    background-size: 44% auto;
+}
+
+/*.sc-yq .comment .c-bd dl .zan i{
+    background-position: 0 -108px;
+}*/
+pre {
+    white-space: pre-wrap; /* css3.0 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+    background-color: #97c1cd;
+    border-width: 0px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#float-download {
+    position: fixed;
+    bottom: 0px;
+    background-color: #2E2E2F;
+    width: 100%;
+    height: 43px;
+    z-index: 10;
+}
+
+#float-download .content {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#float-download .content .text {
+    font-size: 14px;
+    color: #FFF;
+    line-height: 17px;
+    position: absolute;
+    left: 30px;
+    top: 5px;
+}
+
+#float-download .content .download {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: -90px;
+    width: 150px;
+    height: 58px;
+    line-height: 29px;
+    text-align: center;
+    /*background-color: #1fc0e0;*/
+    background-image: url(zq/bless/images/float_predown.png);
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-size: 14px;
+    border-radius: 2px;
+    background-size: 45% auto;
+}
+
+#float-download .content .download:active {
+    /*background-color: #009fbf;*/
+    background-image: url(zq/bless/images/float_active.png);
+    background-repeat: no-repeat;
+}
+</style>
+<script type="text/javascript">
+    $(function () {
+        if(getParam('isapp') == 1)
+        {
+            $("#float-download").hide();
+        }
+        else
+        {
+            $("#float-download").show();
+        }
+
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > $("#_d_bigBtn").offset().top) {
+                $("#float-download").show();
+            }
+            else {
+                $("#float-download").show();
+            }
+        });
+        /*微信检测*/
+        // wenxinTip();
+        function wenxinTip() {
+            var weixin = is_weixin();
+            if (weixin) {
+                $("#weinxin_tip").show();
+                $(".tips-mask").show();
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        function is_weixin() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        $("#btndownload").click(function () {
+            if (wenxinTip())return;//检测是否处在微信浏览器
+            if (navigator.userAgent.indexOf('iPhone') != -1 || navigator.userAgent.indexOf('iPad') != -1 || navigator.userAgent.indexOf('Mac OS') != -1) {
+                //window.location.href='https://itunes.apple.com/us/app/qiao-qiao-you-mi-mi-qiao-qiao/id870466235?ls=1&mt=8';
+                alert('iPhone版即将上线,敬请期待.');
+            }
+            else //if(navigator.userAgent.indexOf('Android')!=-1)
+            {
+                window.location.href = '/msk.apk?f=hd.xy.bb';
+            }
+        });
+    });
+    function getParam(paramName) {
+        paramValue = "";
+        isFound = false;
+        if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+            arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&");
+            i = 0;
+            while (i < arrSource.length && !isFound) {
+                if (arrSource[i].indexOf("=") > 0) {
+                    if (arrSource[i].split("=")[0].toLowerCase() == paramName.toLowerCase()) {
+                        paramValue = arrSource[i].split("=")[1];
+                        isFound = true;
+                    }
+                }
+                i++;
+            }
+        }
+        return paramValue;
+    }
+    $(document).ready(function () {
+
+        // 判断是否需要显示显示分享按钮，如果不是从第一个页面跳到 第二个页面则不显示分享遮罩
+        $(".way").find("#send_reply").on("click", function () {
+            var sc = getParam('sc');
+            var content = document.getElementById("biaobai_way");
+            if (content.value == "") {
+                alert('请填写祝福内容');
+                document.getElementById("biaobai_way").value = "";
+                content.focus();
+                return false;
+            }
+            else {
+                if (content.value.length > 16) {
+                    alert('最多16个字，别瞎写了');
+                    document.getElementById("biaobai_way").value = "";
+                    content.focus();
+                    return false;
+                }
+            }
+            //从客户端cookie中获取在 收集表白页面 用户填写的手机号码，传到服务器。
+            var spn = getCookie('spn');
+            var i = getParam('i');
+            SendReply(sc, content.value, spn, i);
+        });
+        function SendReply(sc, content, spn, i) {
+            document.getElementById("biaobai_way").value = "";
+            $.ajax({
+                url: '/hd/zq_bless',
+                type: 'post',
+                data: {
+                    a: 2020,
+                    i: i,
+                    sc: sc,
+                    msg: content,
+                    sender_pn: spn
+                },
+                dataType: 'json',
+                success: function (data) {
+                    if (data.code === 0) {
+                        alert("送祝福成功");
+                    }
+                    else if (data.code === 2) {
+                        alert("参数错误");
+                    }
+                    else if (data.code === 3) {
+                        alert("超过评论次数限制");
+                    }
+                    else if (data.code === 10005) {
+                        alert("系统内部错误");
+                    }else {
+                        alert(data.message);
+                    }
+                }
+            });
+        }
+    });
+    function test(value) {
+        document.getElementById("biaobai_way").value = value;
+    }
+    function back() {
+        var sc = getParam('sc');
+        var isapp = getParam('isapp');
+        window.location.href = '/hd/zq_send?sc='+sc+'&isapp='+isapp;
+    }
+</script>
+
+</head>
+
+
+<body style="background-color:#ffffff">
+<!-- 微信检测 -->
+<div class="tips-mask"></div>
+<div id="weinxin_tip">
+    <div class="txt">微信内无法下载，请点击<b>右上角</b>按钮<br/>选择在<b>浏览器中打开</b>即可正常下载</div>
+    <div class="ico"></div>
+</div>
+<!-- 浮动下载层 -->
+<div id="float-download">
+    <div class="content">
+        <div class="ico"></div>
+        <div class="float_down"></div>
+        <span class="text">马赛克<br/>能给朋友发匿名消息 + 表白神器</span>
+        <a href="http://download.msk.cm/msk.apk?f=hd.xy.bb" id="btndownload" class="download" onclick="downloadCount()"></a>
+    </div>
+</div>
+<div class="sc-yq">
+    <!--<div class="hd">
+        我是李通，七夕来了，你想怎样跟我表白，大胆说出来吧~<br></br>
+        选择你最喜欢的表白方式，查看其它25个结果
+        {%$ShareContent%}
+    </div> -->
+
+    <div class="hd">
+        {%$greeting%}
+    </div>
+    <div class="upper">
+        <!--<div class="title" id="_d_bigBtn">
+        </div> -->
+
+        <div class="bd">
+            <!--<div class="txt">
+            </div> -->
+        </div>
+
+
+        <div class="input">
+            <div class="way">
+                <input type="text"
+                       style="width:78%;height:40px;background-color:#00233e;border:1px solid #347eb7;color:#ffffff"
+                       id="biaobai_way" value="" placeholder="输入中秋祝福"/>
+                <input type="button" value="发送" class="send_reply" id="send_reply"/>
+
+                <div class="select_way">
+                    {%$wishList%}
+                    <div class="prev" id="prev" style="display:none"><input type="button" style="background-color:transparent;width:32px;height:32px;border:0"
+                                             onClick="silder.prev()"/></div>
+                    <div class="next" id="next" style="display:block"><input type="button" style="background-color:transparent;width:32px;height:32px;border:0"
+                                             onClick="silder.next()"/></div>
+                    <!--<div class="prev"><a href='#' onclick='silder.prev();return false;'>prev</a></prev>
+                    <div class="next"><a href='#' onclick='silder.next();return false;'>next</a></next> -->
+                </div>
+            </div>
+
+            <div class="tip2">
+            </div>
+
+            <div class="button-collect">
+                <input type="button" value="返回游戏" class="collect" id="collect" onClick="back()"/>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        var silder = new Swipe(document.getElementById('silder'));
+    </script>
+
+</body>
+</html>
+

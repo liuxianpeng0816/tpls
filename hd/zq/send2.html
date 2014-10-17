@@ -1,0 +1,617 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{%$title%}</title>
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script type="text/javascript" src="zq/send/js/zepto.min.js"></script>
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="zq/send/css/result.css">
+<style type="text/css">
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 5px;
+}
+
+.sc-yq {
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(zq/send/images/background.jpg);
+}
+
+.sc-yq .title {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    height: 50%;
+    padding-bottom: 10px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.sc-yq .zq {
+    margin-bottom: 10px;
+}
+
+.sc-yq .click_button {
+    margin-bottom: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 430px;
+}
+
+.sc-yq .hd {
+    height: 100px;
+    margin-top: 5px;
+
+}
+
+.sc-yq .hd .text {
+    color: #ff8900;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding:30px;
+    padding-top:0px;
+}
+
+.sc-yq .mask {
+    margin-top: -50px;
+}
+
+.sc-yq .upper {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll !important; /*实现FF背景透明，文字不透明*/
+    background-repeat: no-repeat;
+    width: 97%;
+    height: 100%;
+}
+
+.sc-yq .upper .tip {
+    color: #044182;
+    font-size: 14px;
+    top: 20px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: -18px;
+    font-weight: bold;
+
+}
+
+.sc-yq .upper .sendbless {
+
+    height: 32px;
+    width: 88%;
+    border-radius: 6px;
+    background-color: #ed174d;
+    border: 0px;
+    margin: auto;
+    display: block;
+    position: relative;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.sc-yq .upper .win {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.sc-yq .upper .sendbless:hover {
+    background-color: #8a0000;
+    border: 0px;
+}
+
+.sc-yq .challange {
+    height: 38px;
+    width: 88%;
+    border-radius: 6px;
+    background-color: #ed174d;
+    border: 0px;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.sc-yq .challange:hover {
+
+    background-color: #8a0000;
+    border: 0px;
+}
+
+.sc-yq .newchallange {
+    height: 38px;
+    width: 88%;
+    border-radius: 6px;
+    background-color: #ed174d;
+    border: 0px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.sc-yq .newchallange:hover {
+
+    background-color: #8a0000;
+    border: 0px;
+}
+
+.sc-yq .upper .bd .txt {
+    color: #ffffff;
+    font-size: 30px;
+    padding-bottom: 10px;
+    background-image: url(zq/send/images/bg5.jpg);
+
+}
+
+.sc-yq .upper .username {
+    color: #044182;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 15px;
+
+}
+
+.sc-yq .upper .userportrait {
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    background-color: transparent;
+    background-image: url(zq/send/images/portrait1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 0px;
+    display: block;
+    margin: auto;
+    margin-left:-10px;
+}
+
+.sc-yq .upper .random {
+    margin-top: 15px;
+    color: #044182;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+
+}
+
+.sc-yq .upper .main {
+    width: auto;
+    height: 60px;
+    display: block;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    background-color: white;
+}
+.sc-yq .upper .column_left {
+    width: 25px;
+    height: 60px;
+    margin-right: 10px;
+    float: left;
+}
+.sc-yq .upper .column_right {
+    width: 55px;
+    height: 60px;
+    text-align:center;
+    float: left;
+}
+.sc-yq .upper .column_right_adsense {
+    width: 10px;
+    height: 60px;
+    float: left;
+}
+
+.sc-yq .upper .sendmooncake {
+    height: 62px;
+    width: 62px;
+    border-radius: 6px;
+    background-color: transparent;
+    background-image: url(zq/send/images/sendmooncake_1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 0px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.sc-yq .upper .sendmooncake:hover {
+
+    background-image: url(zq/send/images/sendmooncake_2.png);
+    background-repeat: no-repeat;
+    border: 0px;
+}
+
+#sharefriends {
+    position: fixed;
+    z-index:1000;
+    top:17px;  
+    right:25px; 
+    width:26px;
+    height:60px;
+    background-image:url(zq/send/images/sharefriends.png);
+    background-size:100% 100%;
+}
+
+#float-download {
+    position: fixed;
+    bottom: 0px;
+    background-color: #2E2E2F;
+    width: 100%;
+    height: 43px;
+    z-index: 10;
+}
+
+#float-download .content {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#float-download .content .text {
+    font-size: 14px;
+    color: #FFF;
+    line-height: 17px;
+    position: absolute;
+    left: 30px;
+    top: 5px;
+}
+
+#float-download .content .download {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: -90px;
+    width: 150px;
+    height: 58px;
+    line-height: 29px;
+    text-align: center;
+    /*background-color: #1fc0e0;*/
+    background-image: url(zq/send/images/float_predown.png);
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-size: 14px;
+    border-radius: 2px;
+    background-size: 45% auto;
+}
+
+#float-download .content .download:active {
+    /*background-color: #009fbf;*/
+    background-image: url(zq/send/images/float_active.png);
+    background-repeat: no-repeat;
+}
+
+#float-download .content .float_down {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    background-image: url(zq/send/images/float_down.png);
+    background-repeat: no-repeat;
+    bottom: -77px;
+    left: -10px;
+    background-size: 44% auto;
+}
+
+.sc-yq .upper .prbar {
+    width: 100%;
+    background-color: #ffc480;
+    overflow: hidden;
+}
+
+/* No rounded corners for Opera, because the overflow:hidden dont work with rounded corners */
+doesnotexist:-o-prefocus, #prbar {
+    border-radius: 0px;
+}
+
+.sc-yq .upper .prbar .prpos {
+    background-color: #ff8900;
+    width: 0%;
+    height: 30px;
+    color: #ffffff;
+    font-size: 24;
+    padding-top: 6px;
+    /* CSS3 Progress Bar Transitions */
+    transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -webkit-transition: width 1s ease;
+    -o-transition: width 1s ease;
+    -ms-transition: width 1s ease;
+
+    background-size: 40px 40px;
+
+    /* Background stripes animation */
+    animation: bganim 3s linear 2s infinite;
+    -moz-animation: bganim 3s linear 2s infinite;
+    -webkit-animation: bganim 3s linear 2s infinite;
+    -o-animation: bganim 3s linear 2s infinite;
+    -ms-animation: bganim 3s linear 2s infinite;
+}
+
+.sc-yq .upper .prbar .prpos .countnumber {
+    padding-left: 20px;
+}
+
+@keyframes bganim {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: 40px;
+    }
+}
+
+@-moz-keyframes bganim {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: 40px;
+    }
+}
+
+@-webkit-keyframes bganim {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: 40px;
+    }
+}
+
+@-o-keyframes bganim {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: 40px;
+    }
+}
+
+@-ms-keyframes bganim {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: 40px;
+    }
+}
+</style>
+
+<script type="text/javascript">
+    $(function () {
+        if (getParam('isapp') == 1) {
+            $("#float-download").hide();
+        }
+        else {
+            $("#float-download").show();
+        }
+
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > $("#_d_bigBtn").offset().top) {
+                $("#float-download").show();
+            }
+            else {
+                $("#float-download").show();
+            }
+        });
+        /*微信检测*/
+        // wenxinTip();
+        function wenxinTip() {
+            var weixin = is_weixin();
+            if (weixin) {
+                $("#weinxin_tip").show();
+                $(".tips-mask").show();
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        function is_weixin() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        $("#btndownload").click(function () {
+            if (wenxinTip())return;//检测是否处在微信浏览器
+            if (navigator.userAgent.indexOf('iPhone') != -1 || navigator.userAgent.indexOf('iPad') != -1 || navigator.userAgent.indexOf('Mac OS') != -1) {
+                //window.location.href='https://itunes.apple.com/us/app/qiao-qiao-you-mi-mi-qiao-qiao/id870466235?ls=1&mt=8';
+                alert('iPhone版即将上线,敬请期待.');
+            }
+            else //if(navigator.userAgent.indexOf('Android')!=-1)
+            {
+                window.location.href = '/msk.apk?f=hd.xy.result';
+            }
+        });
+    });
+    function getParam(paramName) {
+        paramValue = "";
+        isFound = false;
+        if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+            arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&");
+            i = 0;
+            while (i < arrSource.length && !isFound) {
+                if (arrSource[i].indexOf("=") > 0) {
+                    if (arrSource[i].split("=")[0].toLowerCase() == paramName.toLowerCase()) {
+                        paramValue = arrSource[i].split("=")[1];
+                        isFound = true;
+                    }
+                }
+                i++;
+            }
+        }
+        return paramValue;
+    }
+    function MoveTo(i) {
+        var cnt = document.getElementById('cnt'+i).value;
+        var sc = getParam('sc');
+        $.ajax({
+            url: '/hd/zq_sm',
+            type: 'post',
+            data: {
+                a: 2020,
+                i: i,
+                sc:sc,
+                cnt:cnt
+            },
+            dataType: 'json',
+            success: function (data) {
+                if (data.code === 0) {
+                    var prpos = document.getElementById('prpos'+i);
+                    prpos.style.width = data.percentage + "%";
+
+                    document.getElementById('sendmooncake'+i).style.display = "none";
+                    document.getElementById('sendbless'+i).style.display = "block";
+                    document.getElementById('countnumber'+i).innerHTML = data.now_cnt;
+                    if (data.is_win) {
+                        self.location.reload();
+                    }
+                }
+                else if (data.code === 2) {
+                    alert("参数错误");
+                }
+                else if (data.code === 3) {
+                    alert("超过评论次数限制");
+                }
+                else if (data.code === 10005) {
+                    alert("系统内部错误");
+                }
+                else if (data.code === 5) {
+                    alert("已经加入，请不要重复加入哦")
+                }else {
+                    alert(data.message);
+                }
+            }
+        });
+    }
+    function sendbless(i) {
+        var sc = getParam('sc');
+        var isapp = getParam('isapp');
+        window.location.href = '/hd/zq_bless_view?a=2020&sc='+sc+'&i='+i+'&isapp='+isapp;
+    }
+    function yingzhan() {
+        window.location.href = '/hd/zq/start/zq.html' + this.location.search
+    }
+    function tiaozhan() {
+        var isapp = getParam('isapp');
+        window.location.href = '/hd/zq/start/zq.html?isapp='+isapp;
+    }
+</script>
+
+</head>
+
+
+<body style="background-color:#ffffff">
+<!-- 微信检测 -->
+<div class="tips-mask"></div>
+<div id="weinxin_tip">
+    <div class="txt">微信内无法下载，请点击<b>右上角</b>按钮<br/>选择在<b>浏览器中打开</b>即可正常下载</div>
+    <div class="ico"></div>
+</div>
+<!-- 浮动下载层 -->
+<div id="float-download">
+    <div class="content">
+        <div class="ico"></div>
+        <div class="float_down"></div>
+        <span class="text">马赛克<br/>能给朋友发匿名消息 + 表白神器</span>
+        <a href="http://download.msk.cm/msk.apk?f=hd.xy.result" id="btndownload" class="download"
+           onclick="downloadCount()"></a>
+    </div>
+</div>
+<div class="sc-yq">
+    <div class="hd">
+        <div class="text"><p><center>{%$greeting%}</center></p></div>
+        <div id="sharefriends" class="sharefriends"></div>
+    </div>
+    <div class="zq">
+        <ul class="mask">
+            {%$user_list%}
+        </ul>
+    </div>
+    <div class="click_button">
+            {%$buttoon%}
+            <div><input type="button" value="发起新挑战" class="newchallange" id="newchallange" onClick="tiaozhan()"/></div>
+    </div>
+
+</div>
+    <style>
+        .shade{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 10;
+            /*display: none;*/
+            display: -webkit-flex;
+        }
+
+        .shade-inner {
+            margin: auto;
+            width: 60%;
+            background: white;
+            text-align: center;
+            padding: 26px 0;
+            border-radius: 7px;
+            font-size: 17px;
+            line-height: 26px;
+        }
+
+        .shade-inner p {
+            color: #000;
+        }
+
+    </style>
+    <div id="shade" class="shade">
+        <div class="shade-inner">
+            <p>点击右上角<br>分享给朋友</p>
+        </div>
+    </div>
+    <script>
+        (function () {
+            var shade = document.getElementById('shade');
+            shade.addEventListener('click', function () {
+                this.style.display = 'none';
+            }, false);
+        })();
+    </script>
+</body>
+</html>
+

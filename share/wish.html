@@ -1,0 +1,415 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{%$title%}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<link rel="stylesheet" href="./css/wish.css">
+
+<style type="text/css">
+.sc-yq  {
+    padding:16px;
+}
+.sc-yq img {
+	display: block;
+}
+
+.hd {
+	height: 49px;
+	background-color: #FFF;
+	border-bottom: 1px solid #e6edf3;
+	position: relative;
+    /*background-position: 0 -131px;*/
+	background-image:url(./wishimages/barbackground.png);
+    background-size:14px;
+
+}
+
+.hd .text {
+	line-height: 46px;
+	font-size: 14px;
+	color: #7c7e80;
+    padding-left:12px;
+    float:left;
+}
+
+.sc-yq .upper {
+    border: 1px solid #D9D9D9;
+    border-radius: 6px;
+    background-color:white;
+    padding-left:10px;;
+    padding-bottom:10px;;
+    padding-right:10px;;
+    }
+.sc-yq .upper .title {
+    margin:0,auto;
+    }
+.sc-yq .upper .title .share-type{
+    font-size: 14px;
+    color: #F8A2A9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float:left;
+    margin:0,auto;
+}
+.sc-yq .upper .title .share-time{
+    font-size: 12px;
+    color: #b2b2b2;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    float:right;
+}
+.sc-yq .upper .bd {
+	color: #FFF;
+	width: 100%;
+	height: 145px;
+	position: relative;
+	display: table;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+    background-color:#f8a2a9;
+
+}
+.sc-yq .upper .bd .txt {
+	color:#ffffff;
+    font-size:36px;
+    font-weight:bold;
+
+}
+.sc-yq .upper .bd .txt .p1 {
+	word-break:break-all;
+}
+.sc-yq .upper .status  {
+    height:40px;
+    background-color:#f26b75;
+	color:#ffffff;
+    font-size:14px;
+    float:center;
+    text-align:center;
+    line-height:40px;
+}
+
+.sc-yq .upper .bd .bar {
+	position: absolute;
+	bottom: 0;
+	height: 37px;
+	line-height: 37px;
+	width: 100%;
+	font-size: 14px;
+	left: 0;
+}
+
+.sc-yq .upper .bd .bar .left {
+	float: left;
+	margin-left: 15px;
+}
+
+.sc-yq .upper .bd .bar .right {
+	float: right;
+	margin-right: 15px;
+    
+}
+
+.sc-yq .upper .bd .bar i,.sc-yq .comment .c-bd dl .zan i {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	/*background-image: url({%$iconimg%});*/
+	background-image:url(./wishimages/icon_yq2.png);
+	background-size: 22px auto;
+	vertical-align: -40px;
+	margin-right: 6px;
+}
+
+.sc-yq .upper .bd .bar .more i {
+	background-position: 0 -54px;
+}
+
+.sc-yq .upper .bd .bar .cNum i {
+	background-position: 0 -86px;
+}
+
+.sc-yq .upper .bd .bar .zNum i {
+	background-position: 0 -27px;
+}
+
+.sc-yq .comment {
+	background-color: #FFF;
+}
+
+.sc-yq .comment .c-hd {
+	height: 30px;
+	line-height: 30px;
+	color: #000000;
+	padding-left: 12px;
+	border-top: 1px solid #dfe2e6;
+	border-bottom: 1px solid #dfe2e6;
+	font-size: 14px;
+}
+
+.sc-yq .lower  {
+    padding-top:74px;
+    padding-bottom:80px;
+    line-height:20px;
+    color:#bfbfbf;
+    font-size:14px;
+}
+.sc-yq .lower .wish {
+    margin-bottom:8px;
+    /*margin-left:-18px;*/
+}
+
+.sc-yq .lower .instruction{
+    color:#b2b2b2;
+    font-size:17px;
+}
+.sc-yq .comment .c-bd {
+	padding: 15px 15px 15px 15px;
+}
+
+.sc-yq .comment .c-bd .list {
+	margin-bottom: 30px;
+}
+
+.sc-yq .comment .c-bd .list .img {
+	float: left;
+	display: inline-block;
+	width: 40px;
+}
+
+.sc-yq .comment .c-bd .right {
+	padding-left: 50px;
+	position: relative;
+}
+
+.sc-yq .comment .c-bd .list .content {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.sc-yq .comment .c-bd .list .floor {
+	font-size: 14px;
+	color: #adb0b3;
+}
+
+.sc-yq .comment .c-bd dl .date{
+    top:12px;
+    right:22px;
+    font-size: 16px;
+    color: #adb0b3;
+}
+.sc-yq .comment .c-bd .list .zan {
+	bottom: 0px;
+	right: 22px;
+	position: absolute;
+}
+
+.sc-yq .comment .c-bd .list .zan i {
+	background-position: 0 -108px;
+}
+
+.txt {
+	vertical-align: middle;
+	display: table-cell;
+}
+.sc-yq .comment .c-bd dl{
+    position: relative;
+    height:70px;
+    width: 100%;
+}
+.sc-yq .comment .c-bd dl dt,.sc-yq .comment .c-bd dl dd{
+    position: absolute;
+}
+.sc-yq .comment .c-bd dl .img{
+    top:15px;
+    left:15px;
+}
+.sc-yq .comment .c-bd dl .content{
+    top:15px;
+    left:63px;
+    font-size: 16px;
+}
+.sc-yq .comment .c-bd dl .floor{
+    top:42px;
+    left:63px;
+    font-size: 12px;
+    color: #adb0b3;
+}
+.sc-yq .comment .c-bd dl .date{
+    top:15px;
+    right:22px;
+    font-size: 12px;
+    color: #adb0b3;
+}
+.content .float_down{
+    position: absolute;
+    width:72px;
+    height:72px;
+    background-image:url(./wishimages/float_down.png);
+    background-repeat:no-repeat;
+    bottom:-77px;
+    left:-10px;
+    background-size:44% auto;
+}
+/*.sc-yq .comment .c-bd dl .zan i{
+    background-position: 0 -108px;
+}*/
+pre{
+	white-space:pre-wrap; /* css3.0 */
+	white-space:-moz-pre-wrap; /* Firefox */
+	white-space:-pre-wrap; /* Opera 4-6 */
+	white-space:-o-pre-wrap; /* Opera 7 */
+	word-wrap:break-word; /* Internet Explorer 5.5+ */
+    	font-size:36px;
+    	font-weight:bold;
+	font-family:sans-serif;
+}
+#float-download {
+    position: fixed;
+    bottom: 0px;
+    background-color: #2E2E2F;
+    width: 100%;
+    height: 43px;
+    z-index: 10;
+}
+#float-download .content{
+    width:300px;
+    margin: 0 auto;
+    position: relative;
+}
+#float-download .content .text{
+    font-size: 14px;
+    color: #FFF;
+    line-height: 17px;
+    position: absolute;
+    left:30px;
+    top:5px;
+}
+#float-download .content .download{
+    display: block;
+    position: absolute;
+    top:8px;
+    right:-90px;
+    width:150px;
+    height:58px;
+    line-height: 29px;
+    text-align: center;
+    /*background-color: #1fc0e0;*/
+    background-image:url(./wishimages/float_predown.png);
+    background-repeat:no-repeat;
+    color: #FFF;
+    font-size: 14px;
+    border-radius: 2px;
+    background-size:45% auto;
+}
+#float-download .content .download:active{
+    /*background-color: #009fbf;*/
+    background-image:url(./wishimages/float_active.png);
+    background-repeat:no-repeat;
+}
+</style>
+
+</head>
+
+<script type="text/javascript">
+	$(function(){
+		$(window).on("scroll",function(){
+	    	if($(window).scrollTop()>$("#_d_bigBtn").offset().top)
+			{
+				$("#float-download").show();
+			}
+			else
+			{
+				$("#float-download").show();
+			}
+		});
+		/*微信检测*/
+		// wenxinTip();
+		function wenxinTip(){
+			var weixin = is_weixin();
+			if(weixin){
+				$("#weinxin_tip").show();
+				$(".tips-mask").show();
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+		function is_weixin(){
+			var ua = navigator.userAgent.toLowerCase();
+			if(ua.match(/MicroMessenger/i)=='micromessenger'){
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+	$("#btndownload").click(function(){
+		if(wenxinTip())return;//检测是否处在微信浏览器
+	if(navigator.userAgent.indexOf('iPhone')!=-1||navigator.userAgent.indexOf('iPad')!=-1||navigator.userAgent.indexOf('Mac OS')!=-1){
+	//window.location.href='https://itunes.apple.com/us/app/qiao-qiao-you-mi-mi-qiao-qiao/id870466235?ls=1&mt=8';
+	alert('iPhone版即将上线,敬请期待.');
+	}
+	else //if(navigator.userAgent.indexOf('Android')!=-1)
+	{
+	window.location.href='msk.apk';
+    }
+    });
+    });
+</script>
+
+<body style="background-image:url(./wishimages/background.png);">
+	<!-- 微信检测 -->
+	<div class="tips-mask"></div>
+	<div id="weinxin_tip">
+		<div class="txt">微信内无法下载，请点击<b>右上角</b>按钮<br />选择在<b>浏览器中打开</b>即可正常下载</div>
+		<div class="ico"></div>
+	</div>
+    <!-- 浮动下载层 -->
+    <div id="float-download">
+        <div class="content">
+            <div class="ico"></div>
+            <div class="float_down"></div>
+                <span class="text">马赛克<br />还能给朋友发匿名消息哦</span>
+                <!-- 下载链接 qiaoqiao.apk-->
+                <a href="http://download.msk.cm/msk.apk" id="btndownload" class="download" onclick="downloadCount()"></a>
+        </div>
+    </div>
+
+    <div class="hd">
+	        <div class="text">来自朋友分享的许愿</div>
+	</div>
+
+	<div class="sc-yq">
+        <div class="upper">
+		    <div class="title" id="_d_bigBtn">
+			        <!--<span class="share-type">我的朋友想和我</span> -->
+				<span class="share-type">{%$ShareTitle%}</span>
+                    </div>
+
+		    <div class="bd" >
+		        <div class="txt">
+			        <span class="p1"><pre><center>{%$ShareContent%}</center></pre></span>
+			    </div>
+		    </div>
+		    <div class="status">
+			        <center>{%$ShareStatus%}</center>
+		    </div>
+        </div>
+        <div class="lower">
+            <center>            
+            <dt class="wish"><img width="114" height="13" src="./wishimages/wish.png" /></dt>
+            </center>
+        <center>对朋友许下愿望，TA不知道你是谁。只有互相许下相同的愿望，才能知道对方的身份。</center>            
+        <!--<dd class="instruction">对朋友许下愿望，TA不知道你是谁。只有互相许下相同的愿望，才能知道对方的身份。</dd> -->            
+        </div>
+    </div>
+</body>
+</html>
+

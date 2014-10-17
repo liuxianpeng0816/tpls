@@ -1,0 +1,190 @@
+<!doctype html>
+<head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=yes"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <title>360安全通讯录-留言板</title>
+    <style type=text/css>
+        @charset "utf-8";
+        body, ul, li, p, span, img, h1, h2, h3, h4, h5, h6 {
+            padding: 0;
+            margin: 0px;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        body {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+            font: Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            border: none;
+            vertical-align: top;
+        }
+
+        a {
+            color: #006699;
+            text-decoration: underline
+        }
+
+        a:hover {
+            color: #0099ff;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #header {
+            background: url(http://w.qhimg.com/images/v2/360se/2011/kouxin/recommend/header_top_bg.jpg) repeat-x top;
+            height: 51px;
+            padding-top: 9px;
+        }
+
+        .logo {
+            padding: 0 0 0 5px;
+        }
+
+        #wrap {
+        }
+
+        #news {
+            background: url(http://w.qhimg.com/images/v2/360se/2011/kouxin/recommend//hp_news_bg.jpg) repeat-x top;
+            padding: 10px 0 7px 12px;
+        }
+
+        .avatar {
+            width: 49px;
+            height: 59px;
+            float: left;
+            margin: 8px 4px 0 0;
+            background: url(http://w.qhimg.com/images/v2/360se/2011/kouxin/recommend//avatar_360.jpg) no-repeat;
+        }
+
+        .msg {
+            float: left;
+            height: 110px;
+        }
+
+        .msg_left {
+            float: left;
+            background: url(http://w.qhimg.com/images/v2/360se/2011/kouxin/recommend//hp_pic02.jpg) no-repeat;
+            width: 31px;
+            height: 110px;
+        }
+
+        .msg_mid {
+            float: left;
+            background: url(http://w.qhimg.com/images/v2/360se/2011/kouxin/recommend//hp_pic03.jpg) repeat-x;
+            height: 110px;
+        }
+
+        .msg_right {
+            float: left;
+            background: url(http://w.qhimg.com/images/v2/360se/2011/kouxin/recommend//hp_pic04.jpg) no-repeat;
+            width: 17px;
+            height: 110px;
+        }
+
+        .msg_mid p {
+            margin: 11px 0 10px 5px;
+        }
+
+        .msg_play {
+            text-align: center;
+        }
+
+        .msg_play audio {
+            width: 190px;
+            border: 0px;
+            margin-top: 5px;
+        }
+
+        .msg_play p {
+            margin-top: 6px;
+            color: #456300;
+        }
+
+        #downlaod {
+            background: url(http://w.qhimg.com/images/v2/360se/2011/kouxin/recommend/down_top_bg.jpg) top repeat-x #ddefff;
+            padding: 15px 0 0 12px;
+            border-bottom: 1px solid #b4d8fa;
+        }
+
+        .product {
+            float: left;
+            width: 81px;
+            height: 171px;
+            margin-right: 12px;
+            background: url(http://w.qhimg.com/images/v2/360se/2011/kouxin/recommend/pic05.jpg) no-repeat;
+        }
+
+        .description {
+            float: left;
+            line-height: 25px;
+            padding: 10px 0 0 0;
+        }
+
+        .description p {
+            color: #666;
+        }
+
+        .description h1 {
+            margin-bottom: 5px;
+        }
+
+        .description img {
+            margin-top: 5px;
+        }
+
+        #footer {
+            padding: 10px 0 0 12px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <div class="logo"><img src="http://w.qhimg.com/images/v2/360se/2011/kouxin/recommend/logo.jpg"
+                               alt="360安全通讯录留言板"></div>
+    </div>
+    <div id="news">
+        <div class="avatar"></div>
+        <div class="msg">
+            <div class="msg_left"></div>
+            <div class="msg_mid">
+                <p>您有一条新的语音消息:</p>
+
+                <div class="msg_play">
+                    <audio id="audio" controls="controls" autoplay="autoplay">
+                        <source src="<!--{$audiosrc}-->">
+                    </audio>
+                    <p>(点击收听)</p>
+                </div>
+            </div>
+            <div class="msg_right"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="downlaod">
+        <div class="product"></div>
+        <div class="description">
+            <h1>360安全通讯录</h1>
+
+            <p><b>最安全</b> 骚扰拦截，通讯录备份</p>
+
+            <p><b>最快捷</b> 联系人快速搜索，便捷群发</p>
+            <a href=""><img src="http://w.qhimg.com/images/v2/360se/2011/kouxin/recommend/btn_down.jpg" alt="免费下载"></a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="footer"><a href="http://www.kouxin.com/">访问完整版官方网站>></a></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,374 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="./css/invite.css">
+
+<style type="text/css">
+.sc-yq  {
+    padding:10px;
+}
+.sc-yq img {
+	display: block;
+}
+
+.sc-yq .hd {
+    height:172px;
+}
+
+.sc-yq .hd .logo-img {
+   
+    height:165px;
+    background-image:url(./inviteimages/top_logo.png);
+    background-repeat:no-repeat;
+    margin:0 auto;
+    margin-top:-47px;
+    margin-bottom:20px;
+    background-position:center;
+    background-size:72px 82px;
+}
+
+.sc-yq .upper {
+    border-radius: 6px 6px 0 0;
+    background-color:#97c1cd;
+    padding-left:16px;;
+    padding-bottom:12px;
+    margin-top:-38px;
+    padding-right:16px;
+    z-index:1;
+    }
+.sc-yq .upper .title {
+    margin:0,auto;
+    }
+.sc-yq .upper .title .share-type{
+    font-size: 14px;
+    color: #ffffff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    float:left;
+    margin:0,auto;
+}
+.sc-yq .upper .title .share-time{
+    font-size: 12px;
+    color: #ffffff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    float:right;
+}
+.sc-yq .upper .bd {
+	color: #FFF;
+	width: 100%;
+	height: 200px;
+	position: relative;
+	display: table;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image:url(./img/bg5.jpg);
+
+}
+.sc-yq .upper .bd .txt {
+	color: #ffffff;
+    font-size:16px;
+    padding-bottom:35px;
+
+}
+
+.sc-yq .upper .bd .bar {
+	position: absolute;
+	bottom: 0;
+	height: 37px;
+	line-height: 37px;
+	width: 100%;
+	font-size: 14px;
+	left: 0;
+}
+
+.sc-yq .upper .bd .bar .left {
+	float: left;
+	margin-left: 15px;
+}
+
+.sc-yq .upper .bd .bar .right {
+	float: right;
+	margin-right: 15px;
+    
+}
+
+.sc-yq .upper .bd .bar i,.sc-yq .comment .c-bd dl .zan i {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	/*background-image: url({%$iconimg%});*/
+	background-image:url(./img/icon_yq2.png);
+	background-size: 22px auto;
+	vertical-align: -40px;
+	margin-right: 6px;
+}
+
+.sc-yq .upper .bd .bar .more i {
+	background-position: 0 -54px;
+}
+
+.sc-yq .upper .bd .bar .cNum i {
+	background-position: 0 -86px;
+}
+
+.sc-yq .upper .bd .bar .zNum i {
+	background-position: 0 -27px;
+}
+
+.sc-yq .android_download .download_link {
+    background-image:url(./inviteimages/download.png);
+    background-repeat:no-repeat;
+    height:120px;
+    margin:0 auto;
+    background-position:center;
+    position:relative;
+    margin-top:-60px;
+    margin-bottom:-50px;
+    background-size:146px 63px;
+}
+.sc-yq .lower  {
+    border-radius: 0 0 6px 6px;
+    padding-left:16px;;
+    padding-bottom:12px;;
+    padding-right:16px;;
+    background-color:#efefef;
+    z-index:-1;
+}
+.sc-yq .lower .text1{
+    font-size:14px;
+    color: #7f7f7f;
+    line-height:26px;
+    margin:0 auto;
+    padding-top:10px;
+}
+.sc-yq .lower .text2{
+    font-size:14px;
+    color: #b3b3b3;
+    line-height:20px;
+    margin:0 auto;
+    padding-top:10px;
+}
+.sc-yq .comment {
+}
+
+.sc-yq .comment .c-hd {
+	height: 30px;
+	line-height: 30px;
+	color: #000000;
+	padding-left: 12px;
+	border-top: 1px solid #dfe2e6;
+	border-bottom: 1px solid #dfe2e6;
+	font-size: 14px;
+}
+
+.sc-yq .comment .c-bd {
+	padding: 15px 15px 15px 15px;
+}
+
+.sc-yq .comment .c-bd .list {
+	margin-bottom: 30px;
+}
+
+.sc-yq .comment .c-bd .list .img {
+	float: left;
+	display: inline-block;
+	width: 40px;
+}
+
+.sc-yq .comment .c-bd .right {
+	padding-left: 50px;
+	position: relative;
+}
+
+.sc-yq .comment .c-bd .list .content {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.sc-yq .comment .c-bd .list .floor {
+	font-size: 14px;
+	color: #adb0b3;
+}
+
+.sc-yq .comment .c-bd dl .date{
+    top:12px;
+    right:22px;
+    font-size: 16px;
+    color: #adb0b3;
+}
+.sc-yq .comment .c-bd .list .zan {
+	bottom: 0px;
+	right: 22px;
+	position: absolute;
+}
+
+.sc-yq .comment .c-bd .list .zan i {
+	background-position: 0 -108px;
+}
+
+.txt {
+	vertical-align: middle;
+	display: table-cell;
+}
+.sc-yq .comment .c-bd dl{
+    position: relative;
+    height:70px;
+    width: 100%;
+}
+.sc-yq .comment .c-bd dl dt,.sc-yq .comment .c-bd dl dd{
+    position: absolute;
+}
+.sc-yq .comment .c-bd dl .img{
+    top:15px;
+    left:15px;
+}
+.sc-yq .comment .c-bd dl .content{
+    top:15px;
+    left:63px;
+    font-size: 16px;
+}
+.sc-yq .comment .c-bd dl .floor{
+    top:42px;
+    left:63px;
+    font-size: 12px;
+    color: #adb0b3;
+}
+.sc-yq .comment .c-bd dl .date{
+    top:15px;
+    right:22px;
+    font-size: 12px;
+    color: #adb0b3;
+}
+
+.sc-yq .feature .row-fluid{
+	height:134px;
+	text-align:center;
+	position: relative;
+	margin-top: 10px;
+}
+
+.sc-yq .feature .row-fluid .col-xs-4 .text{
+	line-height: 40px;
+    color:#9AC0CD;
+    font-size:14px;
+    font-weight:bold;
+}
+.sc-yq .feature .row-fluid .col-xs-4 .img-responsive{
+    width:67px;
+    height:54px;
+    margin:0 auto;
+}
+</style>
+
+</head>
+
+<script type="text/javascript">
+        function downloadfile(){
+			if(!wenxinTip())return;
+			
+            if(navigator.userAgent.indexOf('iPhone')!=-1||navigator.userAgent.indexOf('iPad')!=-1||navigator.userAgent.indexOf('iTouch')!=-1||navigator.userAgent.indexOf('Mac OS')!=-1){
+                /*window.location.href='https://itunes.apple.com/us/app/qiao-qiao-you-mi-mi-qiao-qiao/id870466235?ls=1&mt=8';*/
+                alert('iPhone版即将上线,敬请期待.');
+            }
+            else
+            {
+                window.location.href='http://download.msk.cm/msk.apk';
+            }
+        }
+ 
+		/*微信检测*/
+		function wenxinTip(){
+			var weixin = is_weixin();
+			if(weixin){
+				$("#weinxin_tip").show();
+				$(".tips-mask").show();
+				return false;
+			}
+			else
+			{
+				return true;
+			}
+		}
+		
+		function is_weixin(){
+			var ua = navigator.userAgent.toLowerCase();
+			if(ua.match(/MicroMessenger/i)=='micromessenger'){
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		
+		</script>
+
+<body style="background-color:#ffffff">
+	<!-- 微信检测 -->
+	<div class="tips-mask"></div>
+	<div id="weinxin_tip">
+		<div class="txt">微信内无法下载，请点击<b>右上角</b>按钮<br />选择在<b>浏览器中打开</b>即可正常下载</div>
+		<div class="ico"></div>
+	</div>
+
+	<div class="sc-yq">
+        <div class="hd">
+                <div class="logo-img"></div> 
+        </div>
+
+        <div class="upper">
+		    <div class="title">
+			        <span class="share-type">{%$InviteTitle%}</span>
+            </div>
+
+		    <div class="bd">
+		        <div class="txt">
+			        <center>{%$InviteContent%}</center>
+			    </div>
+		    </div>
+
+        </div>
+        <div class="android_download">
+                <a href="http://download.msk.cm/msk.apk">
+                    <div class="download_link">
+                        <!--<img src="./images/download.png" width="146" height="63">-->
+                    </div>
+                </a>
+        </div>
+        <div class="lower">
+            <span class="text1"><center><br>马赛克是一款匿名聊天软件，你可以通过马赛克给您的朋友发送匿名信息。还能熟人约会，表白哦，快来玩吧!<br></span>
+            <span class="text2"><center><br>(下载马赛克，查看完整消息，和朋友匿名聊聊)</center></span>
+        </div>
+		<div class="feature">
+			<div class="row-fluid">
+                <div class="tp">
+						<div class="col-xs-4">
+							<img src="./inviteimages/tortoise.png" class="img-responsive" alt="Responsive image">
+                             <p class="text">匿名聊天</p>
+						</div>
+				
+						<div class="col-xs-4">
+							<img src="./inviteimages/Artifact.png" class="img-responsive" alt="Responsive image">				
+                             <p class="text">奇趣变声</p>
+						</div>		
+						
+						<div class="col-xs-4">
+							<img src="./inviteimages/wishing.png" class="img-responsive" alt="Responsive image">				
+                             <p class="text">匿名许愿</p>
+						</div>
+                 </div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
+
